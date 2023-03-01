@@ -1,8 +1,8 @@
 import Layout from "@/DashboardLayout/Layout";
 import Link from "next/link";
 
-export const getServerSideProps = async () => {
-  const res = await fetch("https://quikey-server.vercel.app/contact");
+export const getStaticProps = async () => {
+  const res = await fetch("https://quikey-server-konkomaji.vercel.app/contact");
   const data = await res.json();
 
   return {

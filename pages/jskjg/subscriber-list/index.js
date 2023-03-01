@@ -1,7 +1,7 @@
 const { default: Layout } = require("@/DashboardLayout/Layout");
 
 export const getServerSideProps = async () => {
-    const res = await fetch("https://quikey-server.vercel.app/subscribers");
+    const res = await fetch("https://quikey-server-konkomaji.vercel.app/subscribers");
     const data = await res.json();
   
     return {

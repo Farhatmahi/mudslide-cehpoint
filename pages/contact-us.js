@@ -21,7 +21,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("https://quikey-server.vercel.app/contact", {
+    fetch("https://quikey-server-konkomaji.vercel.app/contact", {
       method: "POST",
       headers: {
         "content-type": "application/json",
